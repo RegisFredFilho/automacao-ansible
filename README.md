@@ -209,10 +209,5 @@ Este projeto permitiu praticar:
 - Gerenciamento de credenciais.
 - Integração entre infraestrutura própria e serviços em nuvem.
 
-## 👨‍💻 Autor
-
-**Regis Frederico Filho**
-
-[GitHub](https://github.com/RegisFredFilho)
 
 
