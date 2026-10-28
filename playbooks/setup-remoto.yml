@@ -1,0 +1,10 @@
+
+
+---
+- name: Preparar servidores Debian remotamente
+  hosts: servidores
+  become: true
+
+  roles:
+    - common
+    - webserver

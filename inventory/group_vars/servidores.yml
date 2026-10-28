@@ -1,0 +1,11 @@
+
+---
+pacotes_essenciais:
+  - htop
+  - vim
+  - curl
+  - wget
+  - unzip
+  - git
+
+ambiente: laboratorio

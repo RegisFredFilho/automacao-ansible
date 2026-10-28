@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Linux Automation Lab</title>
+</head>
+<body>
+    <h1>Linux Automation Lab</h1>
+    <h2>Servidor: {{ inventory_hostname }}</h2>
+    <p>Sistema: {{ ansible_facts['distribution'] }}</p>
+    <p>Versao: {{ ansible_facts['distribution_version'] }}</p>
+    <p>Ambiente: {{ ambiente }}</p>
+    <p>Configurado automaticamente com Ansible!</p>
+</body>
+</html>

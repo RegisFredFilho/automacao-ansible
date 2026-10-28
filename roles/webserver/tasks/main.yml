@@ -1,0 +1,38 @@
+
+---
+- name: Instalar Nginx
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+    update_cache: true
+    cache_valid_time: 3600
+
+- name: Criar pagina HTML personalizada
+  ansible.builtin.template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+    mode: "0644"
+
+- name: Configurar site Nginx
+  ansible.builtin.template:
+    src: nginx-site.conf.j2
+    dest: /etc/nginx/sites-available/default
+    owner: root
+    group: root
+    mode: "0644"
+    backup: true
+  notify: Recarregar Nginx
+
+
+- name: Validar configuracao Nginx
+  ansible.builtin.command: nginx -t
+  changed_when: false
+
+
+- name: Garantir que Nginx esteja ativo
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: true

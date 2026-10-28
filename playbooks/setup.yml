@@ -1,0 +1,18 @@
+
+---
+- name: Configurar servidor Debian
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Instalar ferramentas essenciais
+      ansible.builtin.apt:
+        name:
+          - htop
+          - vim
+          - curl
+          - wget
+          - unzip
+        state: present
+        update_cache: true
+        cache_valid_time: 3600

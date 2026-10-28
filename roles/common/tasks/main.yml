@@ -1,0 +1,16 @@
+
+---
+- name: Instalar pacotes essenciais
+  ansible.builtin.apt:
+    name: "{{ pacotes_essenciais }}"
+    state: present
+    update_cache: true
+    cache_valid_time: 3600
+
+- name: Exibir informacoes do servidor
+  ansible.builtin.debug:
+    msg:
+      - "Servidor: {{ inventory_hostname }}"
+      - "Sistema: {{ ansible_facts['distribution'] }}"
+      - "Versao: {{ ansible_facts['distribution_version'] }}"
+      - "Ambiente: {{ ambiente }}"
