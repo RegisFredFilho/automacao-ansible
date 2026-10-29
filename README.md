@@ -1,6 +1,6 @@
 # 🐧 Automação Linux
 
-[![Linux Automation Lab CI](https://github.com/RegisFredFilho/automacao-ansible/actions/workflows/ci.yml/badge.svg)](https://github.com/RegisFredFilho/automacao-ansible/actions/workflows/ci.yml)
+[![Linux Automation Lab CI](https://github.com/RegisFredFilho/automacao-ansible/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/RegisFredFilho/automacao-ansible/actions/workflows/ci.yml)
 
 Laboratório prático de **automação de infraestrutura Linux com Ansible**, utilizando Python para testes automatizados, Nginx como serviço web, GitHub Actions para integração contínua e Cloudflare Access para proteger o acesso externo.
 
