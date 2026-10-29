@@ -1,4 +1,3 @@
-
 ---
 - name: Instalar pacotes essenciais
   ansible.builtin.apt:
