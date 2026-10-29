@@ -1,5 +1,3 @@
-
-
 ---
 - name: Preparar servidores Debian remotamente
   hosts: servidores
